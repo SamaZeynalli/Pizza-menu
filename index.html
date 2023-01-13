@@ -7,9 +7,224 @@
     <title>Pizza website</title>
     <link rel="stylesheet" href="Css/style.css">
     <link rel="stylesheet" href="Css/mobile.css">
-    <link rel="stylesheet" href="Images">
+    <link rel="stylesheet" href="Image">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/2.0.0/css/font-awesome-ie7.css" integrity="sha512-yuZVHfLYhzrtt7FIl8rRWbS3Ej1QHP2DIGmfqEO+To6MEeGoZIAPfzstE8swf120X58vischMnqIfGVECaO8eQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <h3>hello world</h3>
+    <header>
+        <div class="container">
+            <section class="navigation">
+                <div class="left-side">
+                    <ul>
+                        <li>
+                            <img src="./Image/Location.png" alt="location">
+                            <p>Москва</p>
+                        </li>
+                        <li class="mobile-hidden">
+                            <p>Проверить адрес</p>
+                        </li>
+                        <li>
+                            <p>Среднее время доставки*: <strong>00:24:19</strong></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-side mobile-hidden" >
+                    <ul>
+                        <li>
+                            <p>Время работы: с 11:00 до 23:00</p>
+                        </li>
+                        <li>
+                            <img src="./Image/Account.png" alt="account">
+                            <p>Войти в аккаунт</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="logo">
+                <div class="left-side">
+                    <img src="./Image/Group 152.png" alt="logo">
+                </div>
+                <div class="right-side mobile-hidden">
+                    <img src="./Image/Shopping bag.png" alt="shopping bag">
+                    <p>0 ₽</p>
+                </div>
+                <div class="navbar">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </section>
+        </div>
+    </header>
+    <div class="container">
+        <section class="menu">
+            <div>
+                <img src="./Image/Fire.png" alt="fire">
+                <p>Акции</p>
+            </div>
+            <div>
+                <img src="./Image/Pizza.png" alt="pizza">
+                <p>Пицца</p>
+            </div>
+            <div>
+                <img src="./Image/Sushi.png" alt="sushi">
+                <p>Суши</p>
+            </div>
+            <div>
+                <img src="./Image/Drink.png" alt="drink">
+                <p>Напитки</p>
+            </div>
+            <div class="mobile-hidden">
+                <img src="./Image/Snacks.png" alt="snack">
+                <p>Закуски</p>
+            </div>
+            <div class="mobile-hidden">
+                <img src="./Image/Combo.png" alt="combo">
+                <p>Комбо</p>
+            </div>
+            <div class="mobile-hidden">
+                <img src="./Image/Dessert.png" alt="dessert">
+                <p>Десерты</p>
+            </div>
+            <div class="mobile-hidden">
+                <img src="./Image/Sauce.png" alt="sauce">
+                <p>Соусы</p>
+            </div>
+        </section>
+        <section class="cashback">
+            <div>
+                <img src="./Image/Group 737.png" alt="pizza">
+                <p>3 средние пиццы от 999 рублей</p>
+            </div>
+            <div>
+                <img src="./Image/Group 738.png" alt="pizza">
+                <p>Кэшбек 10% на самовывоз (доставка)</p>
+            </div>
+            <div class="mobile-hidden">
+                <img src="./Image/Group 737.png" alt="pizza">
+                <p>3 средние пиццы от 999 рублей</p>
+            </div>
+            <div class="mobile-hidden">
+                <img src="./Image/Group 738.png" alt="pizza">
+                <p>Кэшбек 10% на самовывоз (доставка)</p>
+            </div>
+
+        </section>
+        <section class="location">
+            <p>Проверить адрес доставки</p>
+            <div class="adress"><input type="text" placeholder="Адрес" id="text-1"> </div>
+            <button>Проверить</button>
+        </section>
+        <section class="filter">
+            <h2>Пицца</h2>
+            <div> <img src="./Image/Filter.png" alt="filter"> <p>Фильтры </p></div>
+        </section>
+        <section class="items">
+            <div class="item item-new">
+                <nav>NEW</nav>
+                <img src="./Image/chicken chili.png" alt="chicken">
+                <div class="main">
+                    <h3>Чикен Сладкий Чили</h3>
+                    <p>Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соу...</p>
+                    <div class="price">
+                        <button class="mobile-hidden">Выбрать</button>
+                        <p class="mobile-hidden">от 399 ₽</p>
+                        <div class="mobile-button"><button>от 499 ₽</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item item-hit">
+                <nav>ХИТ</nav>
+                <img src="./Image/easy.png" alt="">
+                <div class="main">
+                    <h3>EASY PEASY огуречный расколбас</h3>
+                    <p>Курица, Лук, Перец Халапеньо...</p>
+                    <div class="price">
+                        <button class="mobile-hidden">Выбрать</button>
+                        <p class="mobile-hidden">от 549 ₽</p>
+                        <div class="mobile-button"><button>от 499 ₽</button></div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="item">
+                <img src="./Image/peasy.png" alt="">
+                <div class="main">
+                    <h3>EEASY PEASY чикен а-ля хрен</h3>
+                    <p>Курица, Лук, Соус Карбонара,...</p>
+                    <div class="price">
+                        <button class="mobile-hidden">Выбрать</button>
+                        <p class="mobile-hidden">от 249 ₽</p>
+                        <div class="mobile-button"><button>от 499 ₽</button></div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="item">
+                <img src="./Image/4season.png" alt="">
+                <div class="main">
+                    <h3>E4 сезона</h3>
+                    <p>Бекон, Ветчина, Грибы, Курица, Лук, Маслины, Огурцы мари.../p>
+                    <div class="price">
+                        <button class="mobile-hidden">Выбрать</button>
+                        <p class="mobile-hidden">от 630 ₽</p>
+                        <div class="mobile-button"><button>от 499 ₽</button></div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="item mobile-hidden">
+                <img src="./Image/4season.png" alt="">
+                <div class="main">
+                    <h3>E4 сезона</h3>
+                    <p>Бекон, Ветчина, Грибы, Курица, Лук, Маслины, Огурцы мари.../p>
+                </div>
+                <div class="price">
+                    <button>Выбрать</button>
+                    <p>от 630 ₽</p>
+                    <div class="mobile-button"><button>от 499 ₽</button></div>
+                </div>
+                
+            </div>
+            <div class="item mobile-hidden">
+                <img src="./Image/peasy.png" alt="">
+                <div class="main">
+                    <h3>EEASY PEASY чикен а-ля хрен</h3>
+                    <p>Курица, Лук, Соус Карбонара,...</p>
+                    <div class="price">
+                        <button>Выбрать</button>
+                        <p>от 249 ₽</p>
+                        <div class="mobile-button"><button>от 499 ₽</button></div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="item mobile-hidden">
+                <img src="./Image/chicken chili.png" alt="chicken">
+                <div class="main">
+                    <h3>Чикен Сладкий Чили</h3>
+                    <p>Курица, Лук, Перец Халапеньо, Сыр Моцарелла, Томатный соу...</p>
+                    <div class="price">
+                        <button>Выбрать</button>
+                        <p>от 399 ₽</p>
+                        <div class="mobile-button"><button>от 499 ₽</button></div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="item mobile-hidden">
+                <img src="./Image/easy.png" alt="">
+                <div class="main">
+                    <h3>EASY PEASY огуречный расколбас</h3>
+                    <p>Курица, Лук, Перец Халапеньо...</p>
+                    <div class="price">
+                        <button >Выбрать</button>
+                        <p>от 549 ₽</p>
+                        <div class="mobile-button"><button>от 499 ₽</button></div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </div>
 </body>
 </html>
